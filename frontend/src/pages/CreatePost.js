@@ -18,7 +18,7 @@ export default function CreatePost() {
         data.set('file',files[0]);
 
         ev.preventDefault();
-        const response = await fetch('http://localhost:4000/post', {
+        const response = await fetch('todo-app-mernstack-backend.vercel.apppost', {
             method: 'POST',
             body: data,
             credentials:'include',
