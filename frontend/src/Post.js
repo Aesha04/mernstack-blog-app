@@ -6,7 +6,7 @@ export default function Post({ _id,title, summary, cover, content, createdAt, au
     <div className="post">
       <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={'http://localhost:4000/' + cover} alt="img1"></img>
+          <img src={'https://mernstack-blog-app-backend.vercel.app/' + cover} alt="img1"></img>
         </Link>
       </div>
       <div className="texts">
