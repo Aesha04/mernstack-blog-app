@@ -6,7 +6,7 @@ function RegisterPage() {
     async function register(ev){
         ev.preventDefault();
         
-        const response =  await fetch('http://localhost:4000/register',{
+        const response =  await fetch('todo-app-mernstack-backend.vercel.app/register',{
                 method:'POST',
                 body : JSON.stringify({username,password}),
                 headers : {'Content-Type' : 'application/json'},
