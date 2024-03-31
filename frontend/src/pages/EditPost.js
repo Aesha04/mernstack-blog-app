@@ -11,7 +11,7 @@ function EditPost() {
     const [redirect,setRedirect] = useState(false);
 
     useEffect(() => {
-        fetch('todo-app-mernstack-backend.vercel.apppost/' + id)
+        fetch('todo-app-mernstack-backend.vercel.app/post/' + id)
         .then(response => {
             response.json().then(postInfo => {
                 setTitle(postInfo.title);
@@ -33,7 +33,7 @@ function EditPost() {
             data.set('file',files?.[0]);
         }
 
-        const response = await fetch('todo-app-mernstack-backend.vercel.apppost', {
+        const response = await fetch('todo-app-mernstack-backend.vercel.app/post', {
             method: 'PUT',
             body: data,
             credentials: 'include',
