@@ -6,7 +6,7 @@ function IndexPage() {
     const [posts,setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('todo-app-mernstack-backend.vercel.app/post').then(response => {
+        fetch('todo-app-mernstack-backend.vercel.app/login').then(response => {
             response.json().then(posts => {
                 setPosts(posts);
             });
